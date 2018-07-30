@@ -22,7 +22,7 @@ httpsServer.listen(SSLPORT, function() {
 app.get('/', function(req, res) {
     if(req.protocol === 'https') {
         res.status(200).send('Welcome to Safety Land!');
-    }·
+    }
     else {
         res.status(200).send('Welcome!');
     }
